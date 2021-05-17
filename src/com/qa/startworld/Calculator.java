@@ -8,11 +8,13 @@ public class Calculator {
 		int subResult;
 		int diviResult;
 		int addThreeResult;
+		//
 		addResult = add(1, 2);
 		multiResult = multi(1, 2);
 		subResult = sub(1, 2);
 		diviResult = divi(4, 2);
 		addThreeResult = addThree(4, 2, 2);
+		//
 		System.out.println(addResult);
 		System.out.println(multiResult);
 		System.out.println(subResult);
