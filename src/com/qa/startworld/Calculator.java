@@ -12,7 +12,7 @@ public class Calculator {
 		addResult = add(1, 2);
 		multiResult = multi(1, 2);
 		subResult = sub(1, 2);
-		diviResult = divi(4, 2);
+		diviResult = divi(1, 2);
 		addThreeResult = addThree(4, 2, 2);
 
 		System.out.println(addResult);
@@ -39,8 +39,14 @@ public class Calculator {
 	}
 	
 	public static int divi(int num1, int num2) {
-		return num1 / num2;
+		int result = 0;
 		
+		if (num1 > num2) {
+			result = num1 / num2;
+		} else {
+			System.out.println("Division cannot be formed");
+		}
+		return result;
 	}
 	
 	public static int addThree(int num1, int num2, int num3) {
