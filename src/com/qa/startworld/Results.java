@@ -2,17 +2,16 @@ package com.qa.startworld;
 
 public class Results {
 	
-	static int physics = 100;
-	static int chemistry = 120;
-	static int biology = 130;
-	static int total = physics + chemistry + biology;
-	static int percentage = total * 100 / 450;
+	static double physics = 100;
+	static double chemistry = 120;
+	static double biology = 130;
+	static double total = physics + chemistry + biology;
+	static double percentage = total * 100 / 450;
 	
 	public static void main(String[] args) {
 		
 		markResults();
 		percentageTotal();
-
 	}
 	
 	public static void markResults() {
@@ -22,6 +21,7 @@ public class Results {
 		System.out.println("Biology Mark: " + biology);
 		System.out.println("*****************");
 		System.out.println("Total Mark: " + total);
+		
 	}
 	
 	public static void percentageTotal() {
