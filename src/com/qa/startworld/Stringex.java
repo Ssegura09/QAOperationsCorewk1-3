@@ -24,15 +24,12 @@ public class Stringex {
 	}
 	
 	public static void ex3() {
-		String b = "Hello";
+		String b = "Hi There!";
 		
-		String sub1 = b.substring(0, 1);
-		String sub2 = b.substring(1, 2);
-		String sub3 = b.substring(2, 3);
-		String sub4 = b.substring(3, 4);
-		String sub5 = b.substring(4, 5);
-		
-		String join = sub1 + "\n" + sub2 + "\n" + sub3 + "\n" + sub4 + "\n" + sub5;
+		String sub1 = b.substring(0, 2);
+		String sub2 = b.substring(3, 8);
+	
+		String join = sub1 + "\n" + sub2;
 		
 //		System.out.println(join);
 		
@@ -41,23 +38,20 @@ public class Stringex {
 	
 	public static void ex4() {
 		
-		String b = "There";
+		String b = "They're here!";
 		
-		String sub1 = b.substring(0, 1);
-		String sub2 = b.substring(1, 2);
-		String sub3 = b.substring(2, 3);
-		String sub4 = b.substring(3, 4);
-		String sub5 = b.substring(4, 5);
+		String sub1 = b.substring(0, 7);
+		String sub2 = b.substring(8, 12);
 		
-		String revJoin = sub5 + "\n" + sub4 + "\n" + sub3 + "\n" + sub2 + "\n" + sub1;
+		String revJoin = sub2 + "\n" + sub1;
 		
-//		System.out.println(revJoin);
+		System.out.println(revJoin);
 		
 	}
 	
 	public static void ex5(String msg, String finder) {
 		
-		System.out.println(msg.equals(finder));
+//		System.out.println(msg.equals(finder));
 	}
 	
 
