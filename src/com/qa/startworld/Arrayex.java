@@ -7,14 +7,15 @@ public class Arrayex {
 	public static void main(String[] args) {
 		int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		System.out.println(Arrays.toString(nums));
-		nestedForStatement();
+		matrix();
 
 	}
 
-	public static void nestedForStatement() {
-		for (int counter = 1; counter <= 10; counter++) {
-			for (int innerCounter = 1; innerCounter <= 10; innerCounter++) {
-				System.out.println(counter + " * " + innerCounter + " = " + (counter * innerCounter));
+	
+	public static void matrix() {
+		for (int i = 1; i <= 10; i++) {
+			for (int j = 1; j <= 10; j++) {
+				System.out.println(i + "*" + j + "=" + (i * j));
 			}
 		}
 	}
