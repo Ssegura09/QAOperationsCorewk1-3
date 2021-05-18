@@ -2,15 +2,15 @@ package com.qa.startworld;
 
 public class Results {
 	
-	static double physics = 1040;
-	static double chemistry = 0;
-	static double biology = 1200;
+	static double physics = 84;
+	static double chemistry = 150;
+	static double biology = 150;
 	static double total = physics + chemistry + biology;
 	static double percentage = total * 100 / 450;
 	static double passMark = 60;
-	static double physMark = physics * 100 / 450;
-	static double chemMark = physics * 100 / 450;
-	static double bioMark = physics * 100 / 450;
+	static double physMark = physics * 100 / 150;
+	static double chemMark = physics * 100 / 150;
+	static double bioMark = physics * 100 / 150;
 
 	
 	public static void main(String[] args) {
@@ -29,6 +29,7 @@ public class Results {
 		System.out.println("*****************");
 		
 	}
+	
 	
 	public static void percentageTotal() {
 		if (percentage < passMark) {
