@@ -7,26 +7,14 @@ import java.util.List;
 import java.util.Collections;
 
 
-public class Arrayex {
-
-	public static void main(String[] args) {
-		int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-//		System.out.println(Arrays.toString(nums));
-		matrix();
-		sandwiches();
-		favoriteClass();
-		method();
-		
-
-	}
-
+public class ArrayEx {
 	
 	public static void matrix() {
 	
 		int[] arr = new int[10];
 		for (int i = 1; i <= arr.length; i++) {
 			for (int j = 1; j <= arr.length; j++) {
-//				System.out.println(i + "*" + j + "=" + (i * j));
+				System.out.println(i + "*" + j + "=" + (i * j));
 			}
 		}
 	}
@@ -47,7 +35,6 @@ public class Arrayex {
 //			System.out.println(arr[i] + " ");
 		}
 		
-		
 	}
 	
 	public static void sandwiches() {
@@ -59,7 +46,6 @@ public class Arrayex {
 		sandwiches.add("Egg Salad");
 		
 		sandwiches.set(0, "ice cream sandwich");
-		
 		
 //		System.out.println(sandwiches);
 		
@@ -83,12 +69,12 @@ public class Arrayex {
 		faveNums.add(10);
 		faveNums.add(30);
 		
-		
 //		Collections.sort(faveNums); //sorting
 		
 //		Collections.reverse(faveNums); //reverse
 		
-//		Collections.swap(faveNums, 0, 2); //swap
+		Collections.swap(faveNums, 0, 2); //swap
+		System.out.println(faveNums);
 		
 		//shallow copy
 		List<Integer> myNums = new ArrayList<>(Arrays.asList(1,2,3,4));
@@ -101,8 +87,6 @@ public class Arrayex {
 		//other way to copy
 		List<Integer> myNumsCopy2 = List.copyOf(myNums);
 		System.out.println("Another Copy: " + myNumsCopy2);
-		
-
 		
 		//for each loop in Java
 		for (int i : faveNums) {
