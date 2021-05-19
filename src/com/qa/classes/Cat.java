@@ -2,8 +2,8 @@ package com.qa.classes;
 
 public class Cat {
 
-	public String name;
-	public int age;
+	private String name;
+	private int age;
 	public String eyeColor;
 	public String coatColor;
 
@@ -28,6 +28,25 @@ public class Cat {
 		this.eyeColor = eyeColor;
 		this.coatColor = coatColor;
 	}
+	
+//	Methods - Getter and Setters
+	
+	public String getCatName() {
+		return this.name;
+	}
+	
+	public void setCatName(String newCatName) {
+		this.name = newCatName;
+	} 
+	
+	public int getCatAge() {
+		return this.age;
+	}
+	
+	public void setCatAge(int newCatAge) {
+		this.age = newCatAge;
+	}
+	
 	
 //	Method - Behaviors
 	
