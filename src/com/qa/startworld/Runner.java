@@ -4,10 +4,9 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
-		ArrayEx.matrix();
-		ArrayEx.sandwiches();
-		ArrayEx.favoriteClass();
-		ArrayEx.method();
+		int result = Calculator.add(4, 5);
+		
+		System.out.println(result);
 	}
 
 }

@@ -2,11 +2,12 @@ package com.qa.classes;
 
 public class Person {
 
+	// Attributes
 	public String name; //
 	public int age; //
 	public String gender; //
 	public boolean isBreathing;
-	public int walkSpeed = 30; // in feet
+	public int walkSpeed = 30; // in feet 
 
 // Constructor
 	public Person(String name, int age, String gender) {
@@ -26,13 +27,14 @@ public class Person {
 	public String speak(String msg) {
 		return this.name + " says: " + msg;
 	}
+	
+	public String bkSpeak(String msg) {
+		
+		return this.name + " has read: " + msg;
+	}
 
 	public int walk() {
 		return walkSpeed;
 	}
 	
-//	public static void test() {
-//		Book test = new Book("Moby Dick", "Herman Melville", "adventure");
-//		System.out.println(test);
-//	}
 }
