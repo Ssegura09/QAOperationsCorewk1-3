@@ -16,6 +16,7 @@ public class Arrayex {
 		sandwiches();
 		favoriteClass();
 		method();
+		
 
 	}
 
@@ -59,6 +60,7 @@ public class Arrayex {
 		
 		sandwiches.set(0, "ice cream sandwich");
 		
+		
 //		System.out.println(sandwiches);
 		
 //		for (int i = 0; i < sandwiches.size(); i++) {
@@ -88,7 +90,19 @@ public class Arrayex {
 		
 //		Collections.swap(faveNums, 0, 2); //swap
 		
-//		ArrayList newArrayList = (ArrayList) faveNums.clone(); //need to do this
+		//shallow copy
+		List<Integer> myNums = new ArrayList<>(Arrays.asList(1,2,3,4));
+		List<Integer> myNumsCopy = new ArrayList<Integer>(myNums);
+		
+		myNums.set(1, 32);
+		System.out.println("Modified: " + myNums);
+		System.out.println("Original: " + myNumsCopy);
+		
+		//other way to copy
+		List<Integer> myNumsCopy2 = List.copyOf(myNums);
+		System.out.println("Another Copy: " + myNumsCopy2);
+		
+
 		
 		//for each loop in Java
 		for (int i : faveNums) {
