@@ -11,13 +11,6 @@ public class Results {
 	static double physMark = physics * 100 / 150;
 	static double chemMark = physics * 100 / 150;
 	static double bioMark = physics * 100 / 150;
-
-	
-	public static void main(String[] args) {
-		
-		markResults();
-		percentageTotal();
-	}
 	
 	public static void markResults() {
 

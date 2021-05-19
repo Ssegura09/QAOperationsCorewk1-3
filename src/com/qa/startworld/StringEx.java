@@ -1,25 +1,6 @@
 package com.qa.startworld;
 
-public class Stringex {
-
-	public static void main(String[] args) {
-		String str1 = "yesterday it was raining";
-		String str2 = "today it is sunny";
-//		System.out.println(str2.toUpperCase() + ", " + str1.toUpperCase());
-		
-		String mySubString1 = str2.substring(0, 11);
-		String mySubString2 = str1.substring(16, 24);
-//		System.out.println(mySubString1.toUpperCase() + mySubString2.toUpperCase());
-		
-//		ex2("Hello World I am here");
-		numOfWords("Hello World I am Here");
-		ex3();
-		printVertically("Hello World I am Here");
-		printReverseVertically("Hello World I am Here");
-		ex4();
-//		ex5("here I am", "here I am not");
-
-	}
+public class StringEx {
 	
 //	public static void ex2(String str) {
 //		int words = 0;
