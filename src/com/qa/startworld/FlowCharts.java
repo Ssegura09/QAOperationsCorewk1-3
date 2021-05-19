@@ -1,13 +1,6 @@
 package com.qa.startworld;
 
-public class Flowcharts {
-
-	public static void main(String[] args) {
-		madness1(2, 5, true);
-		madness2(2001);
-		
-
-	}
+public class FlowCharts {
 	
 	public static void madness1(int num1, int num2, boolean x) {
 		if (x == true) {
