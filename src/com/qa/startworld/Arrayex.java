@@ -78,9 +78,6 @@ public class Arrayex {
 	public static void favoriteClass() {
 		List<Integer> faveNums = new ArrayList<>();
 		
-		
-		
-		
 		faveNums.add(50);
 		faveNums.add(20);
 		faveNums.add(10);
@@ -93,13 +90,17 @@ public class Arrayex {
 		
 //		Collections.swap(faveNums, 0, 2); //swap
 		
-		//set a copy of the ArrayList and modified it
+		//shallow copy
 		List<Integer> myNums = new ArrayList<>(Arrays.asList(1,2,3,4));
 		List<Integer> myNumsCopy = new ArrayList<Integer>(myNums);
 		
 		myNums.set(1, 32);
 		System.out.println("Modified: " + myNums);
 		System.out.println("Original: " + myNumsCopy);
+		
+		//other way to copy
+		List<Integer> myNumsCopy2 = List.copyOf(myNums);
+		System.out.println("Another Copy: " + myNumsCopy2);
 		
 
 		
