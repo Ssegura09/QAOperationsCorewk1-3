@@ -2,10 +2,13 @@ package com.qa.classes;
 
 public class Cat {
 
+	// Attributes
 	private String name;
 	private int age;
 	public String eyeColor;
 	public String coatColor;
+	
+	
 
 	// Constructor
 	public Cat(String name, int age) {
